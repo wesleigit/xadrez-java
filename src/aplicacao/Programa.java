@@ -9,6 +9,5 @@ public class Programa {
 		PartidaDeXadrez partidaDeXadres = new PartidaDeXadrez();
 		UI.imprimirTabuleiro(partidaDeXadres.getPecas());
 
-	}
-
+}
 }
