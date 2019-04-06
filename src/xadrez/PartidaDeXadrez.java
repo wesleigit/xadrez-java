@@ -37,6 +37,15 @@ public class PartidaDeXadrez {
 		colocarNovaPeca('e', 6, new Bispo(tabuleiro, Cor.Branco));
 		colocarNovaPeca('f', 6, new Torre(tabuleiro, Cor.Branco));
 		colocarNovaPeca('g', 6, new Peao(tabuleiro, Cor.Branco));
+		
+		colocarNovaPeca('b', 5, new Rei(tabuleiro, Cor.Preto));
+		colocarNovaPeca('c', 5, new Cavalo(tabuleiro, Cor.Preto));
+		colocarNovaPeca('d', 5, new Dama(tabuleiro, Cor.Preto));
+		colocarNovaPeca('e', 5, new Bispo(tabuleiro, Cor.Preto));
+		colocarNovaPeca('f', 5, new Torre(tabuleiro, Cor.Preto));
+		colocarNovaPeca('g', 5, new Peao(tabuleiro, Cor.Preto));
+		
+		
 	}
 	
 
