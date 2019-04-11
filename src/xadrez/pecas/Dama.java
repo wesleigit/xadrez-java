@@ -12,7 +12,7 @@ public class Dama extends PecaDeXadrez {
 
 	@Override
 	public String toString() {
-		return "C";
+		return "D";
 	}
 	
 	@Override

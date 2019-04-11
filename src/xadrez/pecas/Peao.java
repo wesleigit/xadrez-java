@@ -12,7 +12,7 @@ public class Peao extends PecaDeXadrez {
 
 	@Override
 	public String toString() {
-		return "C";
+		return "P";
 	}
 	
 	@Override
