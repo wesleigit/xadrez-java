@@ -14,4 +14,10 @@ public class Dama extends PecaDeXadrez {
 	public String toString() {
 		return "C";
 	}
+	
+	@Override
+	public boolean[][] movimentosPossiveis() {
+		boolean[][] mat = new boolean[getTabuleiro().getLinhas()][getTabuleiro().getColunas()];
+		return mat;
+	}
 }
