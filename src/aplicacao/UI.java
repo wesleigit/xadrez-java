@@ -58,10 +58,17 @@ public class UI {
 		mprimirPecasCapituradas(capiturada);
 		System.out.println();
 		System.out.println("Turno: " + partidaDeXadrez.getTurno());
-		System.out.println("Aguardando o jogador da  cor " + partidaDeXadrez.getJogadorAtual());
 		
-		if (partidaDeXadrez.getCheck()) {
-			System.out.println("CHECK!");
+		if (partidaDeXadrez.getCheckMate()) {
+			System.out.println("CHECKMATE!");
+			System.out.println("Vencedor: " + partidaDeXadrez.getJogadorAtual());
+		}
+		else {
+			System.out.println("Aguardando o jogador da  cor " + partidaDeXadrez.getJogadorAtual());
+			
+			if (partidaDeXadrez.getCheck()) {
+				System.out.println("CHECK!");		
+		    }
 		}
 	}
 	
