@@ -6,6 +6,7 @@ import tabuleiro.Tabuleiro;
 
 public abstract class PecaDeXadrez extends Peca {
 	private Cor cor;
+	private int quantidadeMovimento;
 	
 	public Cor getCor() {
 		return cor;
@@ -14,6 +15,20 @@ public abstract class PecaDeXadrez extends Peca {
 	public void setCor(Cor cor) {
 		this.cor = cor;
 	}
+	
+	public int getQuantidadeMovimento() {
+		return quantidadeMovimento;
+	}
+	
+	public void incrementarQuantidadeMovimento() {
+		quantidadeMovimento++;
+	}
+	
+	public void decrementarQantidadeMovimento() {
+		quantidadeMovimento--;
+	}
+	
+	
 	
 	public XadrezPosicao getPosicaoXadrez() {
 		return XadrezPosicao.fromPosicao(posicao);
