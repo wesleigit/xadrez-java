@@ -14,6 +14,10 @@ public abstract class PecaDeXadrez extends Peca {
 	public void setCor(Cor cor) {
 		this.cor = cor;
 	}
+	
+	public XadrezPosicao getPosicaoXadrez() {
+		return XadrezPosicao.fromPosicao(posicao);
+	}
 
 	public PecaDeXadrez(Tabuleiro tabuleiro, Cor cor) {
 		super(tabuleiro);
