@@ -204,7 +204,35 @@ public class PartidaDeXadrez {
 	}
 	
 	private void inicilizarJogo() {
-		colocarNovaPeca('b', 6, new Rei(tabuleiro, Cor.Branco));
+		// Peças Brancas
+		colocarNovaPeca('a', 1, new Torre(tabuleiro, Cor.Branco));
+		colocarNovaPeca('h', 1, new Torre(tabuleiro, Cor.Branco));
+		colocarNovaPeca('e', 1, new Rei(tabuleiro, Cor.Branco));
+		colocarNovaPeca('a', 2, new Peao(tabuleiro, Cor.Branco));
+		colocarNovaPeca('b', 2, new Peao(tabuleiro, Cor.Branco));
+		colocarNovaPeca('c', 2, new Peao(tabuleiro, Cor.Branco));
+		colocarNovaPeca('d', 2, new Peao(tabuleiro, Cor.Branco));
+		colocarNovaPeca('e', 2, new Peao(tabuleiro, Cor.Branco));
+		colocarNovaPeca('f', 2, new Peao(tabuleiro, Cor.Branco));
+		colocarNovaPeca('g', 2, new Peao(tabuleiro, Cor.Branco));
+		colocarNovaPeca('h', 2, new Peao(tabuleiro, Cor.Branco));
+		
+		// Peças Pretas
+		colocarNovaPeca('a', 8, new Torre(tabuleiro, Cor.Preto));
+		colocarNovaPeca('h', 8, new Torre(tabuleiro, Cor.Preto));
+		colocarNovaPeca('e', 8, new Rei(tabuleiro, Cor.Preto));
+		colocarNovaPeca('a', 7, new Peao(tabuleiro, Cor.Preto));
+		colocarNovaPeca('b', 7, new Peao(tabuleiro, Cor.Preto));
+		colocarNovaPeca('c', 7, new Peao(tabuleiro, Cor.Preto));
+		colocarNovaPeca('d', 7, new Peao(tabuleiro, Cor.Preto));
+		colocarNovaPeca('e', 7, new Peao(tabuleiro, Cor.Preto));
+		colocarNovaPeca('f', 7, new Peao(tabuleiro, Cor.Preto));
+		colocarNovaPeca('g', 7, new Peao(tabuleiro, Cor.Preto));
+		colocarNovaPeca('h', 7, new Peao(tabuleiro, Cor.Preto));
+		
+		
+		
+		/*colocarNovaPeca('b', 6, new Rei(tabuleiro, Cor.Branco));
 		colocarNovaPeca('c', 6, new Cavalo(tabuleiro, Cor.Branco));
 		colocarNovaPeca('d', 6, new Dama(tabuleiro, Cor.Branco));
 		colocarNovaPeca('e', 6, new Bispo(tabuleiro, Cor.Branco));
@@ -217,7 +245,7 @@ public class PartidaDeXadrez {
 		colocarNovaPeca('e', 1, new Bispo(tabuleiro, Cor.Preto));
 		colocarNovaPeca('f', 1, new Torre(tabuleiro, Cor.Preto));
 		colocarNovaPeca('g', 1, new Peao(tabuleiro, Cor.Preto));
-		
+		*/
 		
 	}
 	
