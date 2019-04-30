@@ -74,24 +74,24 @@ public class UI {
 	
 	public static void imprimirTabuleiro(PecaDeXadrez[][] pecas) {
 		for (int i=0; i<pecas.length; i++) {
-			System.out.print((8 - i) + " ");
+			System.out.print(ANSI_GREEN  + (8 - i)  + " " + ANSI_RESET);
 			for(int j=0; j<pecas.length;j++) {
 				imprimirPeca(pecas[i][j], false);
 			}
 			System.out.println();
 		}
-		System.out.println("  a b c d e f g h");
+		 System.out.println(ANSI_GREEN  + "  a b c d e f g h" + ANSI_RESET);
 	}
 	
 	public static void imprimirTabuleiro(PecaDeXadrez[][] pecas, boolean[][] movimentosPossiveis) {
 		for (int i=0; i<pecas.length; i++) {
-			System.out.print((8 - i) + " ");
+			System.out.print(ANSI_GREEN  + (8 - i) + " " +  ANSI_RESET);
 			for(int j=0; j<pecas.length;j++) {
 				imprimirPeca(pecas[i][j], movimentosPossiveis[i][j]);
 			}
 			System.out.println();
 		}
-		System.out.println("  a b c d e f g h");
+		 System.out.println(ANSI_GREEN  + "  a b c d e f g h" + ANSI_RESET);
 	}
 	
 	
